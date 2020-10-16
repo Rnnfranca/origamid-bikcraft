@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+
+    <script>
+        document.documentElement.classList.add("js")
+    </script>
 </head>
 <body>
 
@@ -40,8 +45,8 @@
     <!-- TÍTULO, CITAÇÃO E BOTÃO (INTRODUCAO) -->
     <section class="introducao">
         <div class="container">
-            <h1>BICICLETAS FEITAS A MÃO</h1>
-            <blockquote class="quote-externo">
+            <h1 data-anime="400" class="fadeInDown">BICICLETAS FEITAS A MÃO</h1>
+            <blockquote data-anime="800" class="fadeInDown quote-externo">
                 <p>
                     "Não tenha nada em sua casa que você
                     não considere útil ou acredita ser bonito"
@@ -51,7 +56,7 @@
                 </cite>
             </blockquote>
 
-            <div class="btn-container">
+            <div data-anime="1200" class="btn-container">
                 <a href="produtos.html" class="btn">ORÇAMENTO</a>
             </div>
 
@@ -59,7 +64,7 @@
     </section>
 
     <!-- PRODUTOS -  HOME -->
-    <section class="container produtos">
+    <section data-anime="1600" class="fadeInDown container produtos">
         <h2 class="subtitulo">PRODUTOS</h2>
         
         <ul class="produtos-lista">
@@ -229,5 +234,7 @@
 
     </footer>
 
+    <script src="js/simple-anime.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
